@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 800px;
+    margin-bottom: 400px;
+}
+
+h1 {
+    margin-left: 50px;
+    margin-bottom: 30px;
+    color: #E8C999;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#msg{
+    color: #E8C999;
+    font-style: italic;
+}
+
+.new{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #8E1616;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.new:hover{
+    background-color: #F8EEDF;
+}
+.hide{
+    display: none;
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 0 auto 20px;
+}
+
+.cell {
+    color: #8E1616;
+    background-color: #F8EEDF;
+    border: 2px solid #444;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cell:hover {
+    color:#F8EEDF;
+    background-color: #8E1616;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #8E1616;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #8E1616;
+    background-color: #f0d2a5;
+}
+#reset{
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
